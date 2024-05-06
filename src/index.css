@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+  @font-face {
+      font-family: "Estedad";
+      src: url("../public/fonts/Estedad-Regular.woff2") format("truetype");
+  }
+}
+@layer components{
+  .completed{
+    @apply bg-white text-gray-700 line-through
+  }
+  .uncompleted{
+    @apply bg-red-300
+  }
+}
