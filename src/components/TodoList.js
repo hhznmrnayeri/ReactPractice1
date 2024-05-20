@@ -4,7 +4,7 @@ import { TiTick } from "react-icons/ti";
 import { IoMdTrash } from "react-icons/io";
 // import Todo from './Todo';
 export default function TodoList() {
-    const [title,setTitle]=useState([]);
+    const [title,setTitle]=useState('');
     const [notes,setNotes]=useState([]);
     const [getNotes,setGetNotes]=useState(false);
     const generateNote = async(event)=>{
