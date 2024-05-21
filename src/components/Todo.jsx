@@ -1,16 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { TiTick } from "react-icons/ti";
 import { IoMdTrash } from "react-icons/io";
 export default function Todo(props) {
-    useEffect(() => {
-        console.log('Todo.js => Mount');
-        return () => {
-            console.log('Todo.js => UnMount');
-        }
-    }, [])
-    useEffect(() => {
-        console.log('Todo.js => Updating');
-    })
     const editNoteHandler=(id)=>{
         props.onEdit(id)
     }
