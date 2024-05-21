@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import './../App.css'
 import Nasa from './Nasa'
 export default function NasaList() {
@@ -10,6 +10,7 @@ export default function NasaList() {
         let res= await fetch(`https://api.nasa.gov/planetary/apod?api_key=Q5GRsWcW4ZCKNQlkBAbBU9g9RaKOedI5FU7XP7GR&count=${count}`)
         let data=await res.json()
         setNasaArray(data)
+        setCount(0)
       }else{
         setNasaArray([])
       }
@@ -17,10 +18,6 @@ export default function NasaList() {
     const countHandler=(event)=>{
       setCount(event.target.value)
     }
-    useEffect(()=>{
-      },[nasaArray])
-    useEffect(()=>{
-      },[count])
   return (
 <>
     <div className='flex items-center justify-center my-10 gap-4'>
