@@ -1,12 +1,14 @@
+import { useRoutes } from "react-router-dom";
 import "./App.css";
+import routes from "./routes";
+import Nav from "./components/Nav";
 function App() {
+  const router = useRoutes(routes);
   return (
-    <div className="container">
-      <h1 className="text-red-600 font-estedad text-5xl">ممنون</h1>
-      <h1 className="text-red-600 text-5xl">ممنون</h1>
-      <div className="w-52 h-52 m-auto bg-test"></div>
-      <img src="/src/assets/img.jpg" alt="img" />
-    </div>
+    <>
+      <Nav />
+      {router}
+    </>
   );
 }
 export default App;
