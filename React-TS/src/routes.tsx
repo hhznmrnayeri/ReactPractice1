@@ -1,3 +1,7 @@
 import NasaList from "./components/NasaList";
-let routes = [{ path: "/nasa", element: <NasaList /> }];
+import TodoList from "./components/TodoList";
+let routes = [
+  { path: "/nasa", element: <NasaList /> },
+  { path: "/todo", element: <TodoList /> },
+];
 export default routes;
