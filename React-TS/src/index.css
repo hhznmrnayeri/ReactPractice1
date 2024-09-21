@@ -7,3 +7,11 @@
     src: url("assets/fonts/Estedad-Regular.woff2") format("truetype");
   }
 }
+@layer components {
+  .completed {
+    @apply text-white bg-gray-700 line-through;
+  }
+  .uncompleted {
+    @apply bg-blue-700;
+  }
+}
