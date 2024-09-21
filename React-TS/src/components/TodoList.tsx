@@ -37,7 +37,6 @@ export default function TodoList() {
       setGetTodoList((prev) => !prev);
       getAllTodo();
     });
-    return true;
   };
   const deleteTodoHandler = (todoId: string) => {
     fetch(
@@ -50,7 +49,6 @@ export default function TodoList() {
     });
     setGetTodoList((prev) => !prev);
     getAllTodo();
-    return true;
   };
   const getAllTodo = async () => {
     const res = await fetch(

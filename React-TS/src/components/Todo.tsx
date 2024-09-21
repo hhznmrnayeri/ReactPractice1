@@ -3,8 +3,8 @@ import { IoMdTrash } from "react-icons/io";
 import { Todo as TodoType } from "./Todo.types";
 type TodoProps = {
   todo: TodoType;
-  editTodoHandler: (id: string) => boolean;
-  deleteTodoHandler: (id: string) => boolean;
+  editTodoHandler: (id: string) => void;
+  deleteTodoHandler: (id: string) => void;
 };
 export default function Todo({
   todo,
